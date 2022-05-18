@@ -1,0 +1,17 @@
+﻿<Window x:Class="Lab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" Height="44" Width="100" Click="Button_Click"/>
+        <StackPanel x:Name="stakPanel" Margin="0,217,0,0"/>
+        <WrapPanel Name="wrapPanel" Margin="474,0,0,233" />
+        <Button Content="Button_2" HorizontalAlignment="Left" Margin="29,14,0,0" VerticalAlignment="Top" Height="51" Width="89" Click="Button_Click_1"/>
+
+
+    </Grid>
+</Window>
