@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<svg version="1.0"  
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="800" height="600" 
+    preserveAspectRatio="1">
+    <defs>
+      <g id="Triangle">
+      <polygon points="400,400 370,525 430,525"/>
+      </g>
+      <g id="Rectangle">
+      <rect x="400" y="200" width="250" height="20"  transform = "rotate (23)" fill="#FF0000"/>
+      </g>
+      <g id="Pentagon" fill="#0000CD">
+        <animateTransform attributeName = "transform" type = "rotate" from = "360 300 300" to = "0 300 300" dur = "30s" repeatCount="indefinite"/> 
+        <polygon points = " 300,100 110,238 182,462 418,462 490,238 "/>
+      </g>
+      <g id="triangleCenter">
+        <use xlink:href="#Pentagon" transform = "scale(0.4,0.4) translate(420,580)"/>
+        <use xlink:href="#Pentagon" transform = "scale(0.4,0.4) translate(980,810)"/>
+        <use xlink:href="#Triangle" fill="#0000CD"/>
+        <use xlink:href="#Rectangle"/>
+       </g>
+       <g id="triangleLeft">
+        <use xlink:href="#Pentagon" transform = "scale(0.4,0.4) translate(420,580)"/>
+        <use xlink:href="#Pentagon" transform = "scale(0.4,0.4) translate(980,810)"/>
+        <use xlink:href="#Triangle" fill="#8B008B"/>
+        <use xlink:href="#Rectangle"/>
+      </g>
+       <g id="triangleRight">
+        <use xlink:href="#Pentagon" transform = "scale(0.4,0.4) translate(420,580)"/>
+        <use xlink:href="#Pentagon" transform = "scale(0.4,0.4) translate(980,810)"/>
+        <use xlink:href="#Triangle" fill="#006400"/>
+        <use xlink:href="#Rectangle"/>
+      </g>
+    </defs>
+    <rect width="800" height="600" style="fill:rgb(255, 255, 255);stroke:rgb(0, 0, 0)"/>   
+    <use xlink:href="#triangleCenter" transform = "translate(0,60)"/>
+    <use xlink:href="#triangleLeft" transform = "scale(0.8,0.8) translate(-160,-140)"/>
+    <use xlink:href="#triangleRight" transform = "scale(0.6,0.6) translate(580,-120)"/>   
+</svg>
